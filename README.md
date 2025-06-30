@@ -15,7 +15,13 @@ Sistema completamente automatizado que obtiene el precio de Bitcoin de CoinGecko
 
 ### 1. Configurar credenciales
 
-Edita el archivo `.env` con tus credenciales:
+Copia el archivo de ejemplo y edítalo con tus credenciales:
+
+```bash
+cp .env.example .env
+```
+
+Luego edita el archivo `.env` con tus datos:
 
 ```env
 # Variables de configuración para Zoho Mail
@@ -24,8 +30,8 @@ ZOHO_PASSWORD=tu_password_de_aplicacion
 ZOHO_SMTP_SERVER=smtp.zoho.com
 ZOHO_SMTP_PORT=587
 
-# Emails de destino (separados por coma)
-RECIPIENT_EMAILS=destinatario1@email.com,destinatario2@email.com
+# Emails de destino (separados por coma - puedes agregar múltiples)
+RECIPIENT_EMAILS=destinatario1@email.com,destinatario2@email.com,destinatario3@email.com
 
 # Configuración del navegador
 HEADLESS_MODE=true
